@@ -12,10 +12,12 @@
     <button type="button" name="button" id="addOne">+1</button>
   </form>
   <script>
-    var clicks = $('#compteur').val();
-    $('#addOne').click(function(){
-      clicks ++;
-      $('#compteur').val(clicks);
+    $(function(){
+       var clicks = $('#compteur').val();
+        $('#addOne').click(function(){
+          clicks ++;
+          $('#compteur').val(clicks);
+        });
     });
   </script>
 </body>
